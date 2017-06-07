@@ -70,5 +70,4 @@ grunt.loadNpmTasks('grunt-open');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.registerTask('default', ['connect', 'watch', 'open' ]);
 
-
 };
