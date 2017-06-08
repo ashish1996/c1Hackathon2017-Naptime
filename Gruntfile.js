@@ -46,8 +46,8 @@ module.exports = function(grunt)
 
 			css:
 			{
-				files: ['connect/public/css/testcss/*.scss', 'scss/*.scss', 'node_modules/michelangelo/kss_styleguide/custom-template/kss-assets/css/*.scss'],
-				tasks: [ 'sass', 'kss'],
+				files: ['*.css']
+				
 			
 			}, //css
 

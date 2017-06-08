@@ -1,13 +1,118 @@
 <!DOCTYPE HTML>
-<!DOCTYPE HTML>
+
 
 <html>
 <head>
+    <title>Capital One Sentiment Analysis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <meta name ="viewport" content = 'width=device-width, intial scale = 1.0'>
 <link rel="stylesheet" type="text/css" href="assets/build/styles/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/build/styles/style.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/build/styles/style.css" rel="stylesheet">
+
+
+    <!-- DC Twitter CSS -->
+    <link href="http://www.dreamtemplate.com/dreamcodes/twitter_tweet/jquery.tweet.css" rel="stylesheet">
+
 </head>
+<body>
+
+
+
+<img src="assets/build/images/SentimentOne.png" alt="Sentiment One Logo" align="right" width="400" height="200"
+     style="width:200px;height:90px;">
+<p></p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%" style="margin-top: 100%">
+                40%
+            </div>
+        </div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+    <p></p>
+        <p></p>
+        <p></p>
+        <div class="col-md-2 sidebar">
+
+           
+            <!-- DC Twitter Start -->
+            <div id="query" class="query" style="width:80%;"></div>
+           
+        </div>
+            <script>
+                n =  new Date();
+                y = n.getFullYear();
+                m = n.getMonth() + 1;
+                d = n.getDate();
+                document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+            </script>
+
+           
+            <h2 class="sub-header">Twitter Feed Statistics</h2>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Sentiment Dashboard</h1>
+            <p>Last Updated On: </p>
+            <p id="date"></p>
+
+
+     
+        </div>
+    </div>
+</div>
+   <div class = "graph">
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                         Duration <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="m" value="2014-02-19" href="#"></li>
+                </ul>
+            </div>
+
+        <div id="mbars">
+        </div>
+        </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/build/scripts/graph.js"></script>
+
+</body>
+</html>
